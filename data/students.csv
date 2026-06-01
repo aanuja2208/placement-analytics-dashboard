@@ -1,0 +1,201 @@
+student_id,graduation_year,branch,cgpa,class_10_percent,class_12_percent,internships_count,major_project_domain,research_papers_count,outcome,placed_flag,higher_studies_flag,unplaced_flag
+S14_01,2014,ME,7.9,80.9,85.2,0,Biotech Research,0,Placed,1,0,0
+S14_02,2014,EE,8.72,85.1,72.6,0,Web Development,0,Higher Studies,0,1,0
+S14_03,2014,BT,7.52,78.6,75.7,1,Robotics,0,Placed,1,0,0
+S14_04,2014,EE,7.41,81.8,82.8,2,Core Engineering,0,Unplaced,0,0,1
+S14_05,2014,COE,7.02,79.7,75.2,0,Biotech Research,0,Placed,1,0,0
+S14_06,2014,EE,8.98,86.5,74.4,1,Core Engineering,0,Placed,1,0,0
+S14_07,2014,ME,5.76,73.6,81.4,0,Web Development,0,Unplaced,0,0,1
+S14_08,2014,ME,7.76,84.1,93.1,2,Software Systems,0,Placed,1,0,0
+S14_09,2014,ECE,7.47,79.8,67.5,0,Software Systems,0,Higher Studies,0,1,0
+S14_10,2014,ME,6.86,87.6,81.4,3,Hardware & VLSI,0,Higher Studies,0,1,0
+S14_11,2014,EE,6.24,87.1,63.6,3,Core Engineering,0,Placed,1,0,0
+S14_12,2014,ME,8.36,71.0,77.8,2,Robotics,0,Placed,1,0,0
+S14_13,2014,BT,6.87,87.9,78.3,0,Biotech Research,2,Unplaced,0,0,1
+S14_14,2014,COE,7.16,93.0,81.4,1,Biotech Research,0,Placed,1,0,0
+S14_15,2014,ECE,6.42,73.8,81.0,1,IoT,0,Placed,1,0,0
+S14_16,2014,EE,6.5,84.4,68.3,1,Hardware & VLSI,0,Placed,1,0,0
+S14_17,2014,ECE,6.64,74.1,80.8,1,IoT,0,Unplaced,0,0,1
+S14_18,2014,ECE,7.15,81.7,70.7,1,Software Systems,0,Unplaced,0,0,1
+S14_19,2014,ME,6.86,93.1,91.2,1,Hardware & VLSI,1,Placed,1,0,0
+S14_20,2014,BT,8.61,95.7,87.0,0,Software Systems,0,Placed,1,0,0
+S15_21,2015,COE,6.76,94.4,73.7,2,Biotech Research,0,Unplaced,0,0,1
+S15_22,2015,ECE,7.24,69.1,81.5,0,Hardware & VLSI,2,Placed,1,0,0
+S15_23,2015,BT,7.92,84.4,82.0,1,IoT,0,Unplaced,0,0,1
+S15_24,2015,ME,7.78,83.4,70.3,2,Web Development,0,Placed,1,0,0
+S15_25,2015,ME,8.12,92.1,83.4,1,Hardware & VLSI,0,Placed,1,0,0
+S15_26,2015,ME,8.25,84.2,86.6,2,Web Development,0,Placed,1,0,0
+S15_27,2015,ECE,6.64,85.9,78.2,0,Biotech Research,1,Unplaced,0,0,1
+S15_28,2015,COE,8.07,78.4,86.2,1,Core Engineering,0,Placed,1,0,0
+S15_29,2015,COE,7.64,85.1,72.9,2,Web Development,0,Unplaced,0,0,1
+S15_30,2015,ECE,7.62,90.7,88.4,0,Core Engineering,0,Higher Studies,0,1,0
+S15_31,2015,ECE,7.91,100.0,84.6,3,Software Systems,0,Placed,1,0,0
+S15_32,2015,ECE,8.41,83.2,81.1,0,Biotech Research,0,Placed,1,0,0
+S15_33,2015,BT,8.27,77.9,89.7,0,Web Development,0,Placed,1,0,0
+S15_34,2015,EE,7.38,82.1,83.5,0,Data Science,1,Placed,1,0,0
+S15_35,2015,COE,8.93,76.6,67.6,0,Web Development,0,Higher Studies,0,1,0
+S15_36,2015,ECE,7.23,99.1,81.8,1,Data Science,0,Higher Studies,0,1,0
+S15_37,2015,EE,7.23,75.5,85.6,0,Core Engineering,0,Higher Studies,0,1,0
+S15_38,2015,BT,7.98,82.0,86.0,2,Core Engineering,3,Higher Studies,0,1,0
+S15_39,2015,BT,6.67,83.6,83.8,2,Robotics,0,Placed,1,0,0
+S15_40,2015,EE,7.87,78.7,79.1,1,Core Engineering,0,Placed,1,0,0
+S16_41,2016,ME,6.51,75.4,95.6,0,Software Systems,1,Higher Studies,0,1,0
+S16_42,2016,COE,7.47,64.3,91.1,1,Robotics,0,Placed,1,0,0
+S16_43,2016,BT,8.33,83.8,67.7,2,Web Development,0,Placed,1,0,0
+S16_44,2016,ECE,7.79,69.6,73.3,0,Biotech Research,0,Unplaced,0,0,1
+S16_45,2016,BT,7.81,81.0,78.4,1,Hardware & VLSI,0,Placed,1,0,0
+S16_46,2016,ECE,9.12,79.3,82.0,3,Core Engineering,0,Placed,1,0,0
+S16_47,2016,EE,7.57,82.7,77.9,0,Data Science,0,Unplaced,0,0,1
+S16_48,2016,BT,8.45,69.3,80.6,3,Robotics,1,Placed,1,0,0
+S16_49,2016,EE,5.63,79.2,71.8,0,Biotech Research,0,Placed,1,0,0
+S16_50,2016,BT,8.17,94.7,83.8,3,Software Systems,0,Placed,1,0,0
+S16_51,2016,BT,7.55,75.2,90.9,2,Data Science,0,Unplaced,0,0,1
+S16_52,2016,COE,7.27,88.7,71.5,0,Data Science,0,Placed,1,0,0
+S16_53,2016,ME,6.78,94.2,82.9,1,Web Development,0,Placed,1,0,0
+S16_54,2016,BT,7.67,85.7,71.7,1,Web Development,0,Placed,1,0,0
+S16_55,2016,EE,7.1,81.6,74.8,1,Hardware & VLSI,0,Placed,1,0,0
+S16_56,2016,COE,6.22,87.9,91.8,2,IoT,0,Placed,1,0,0
+S16_57,2016,BT,7.74,73.2,82.7,2,Software Systems,0,Placed,1,0,0
+S16_58,2016,COE,7.43,95.1,81.8,3,IoT,0,Placed,1,0,0
+S16_59,2016,EE,6.82,74.5,82.7,1,Core Engineering,0,Placed,1,0,0
+S16_60,2016,COE,7.29,92.2,79.3,0,Web Development,2,Unplaced,0,0,1
+S17_61,2017,ECE,5.41,76.8,84.7,4,Robotics,0,Unplaced,0,0,1
+S17_62,2017,ME,8.47,84.9,93.7,2,Biotech Research,0,Placed,1,0,0
+S17_63,2017,ECE,8.47,80.8,81.0,0,Hardware & VLSI,0,Placed,1,0,0
+S17_64,2017,BT,7.11,64.6,96.3,1,Web Development,0,Placed,1,0,0
+S17_65,2017,ME,8.3,80.1,83.7,1,IoT,1,Placed,1,0,0
+S17_66,2017,ME,7.51,81.1,71.7,0,Hardware & VLSI,0,Placed,1,0,0
+S17_67,2017,EE,6.94,83.7,79.1,2,Biotech Research,0,Higher Studies,0,1,0
+S17_68,2017,ECE,7.32,77.0,62.5,1,Robotics,0,Higher Studies,0,1,0
+S17_69,2017,EE,6.56,68.7,82.3,0,IoT,0,Unplaced,0,0,1
+S17_70,2017,COE,7.11,95.5,87.1,2,Biotech Research,0,Higher Studies,0,1,0
+S17_71,2017,ME,7.19,76.7,91.2,1,IoT,1,Placed,1,0,0
+S17_72,2017,ECE,6.45,80.4,61.8,1,Hardware & VLSI,1,Unplaced,0,0,1
+S17_73,2017,ME,8.14,83.2,94.4,2,IoT,0,Higher Studies,0,1,0
+S17_74,2017,BT,7.44,87.1,73.5,2,Data Science,0,Placed,1,0,0
+S17_75,2017,COE,6.98,82.4,73.1,0,Robotics,1,Unplaced,0,0,1
+S17_76,2017,COE,7.19,90.9,86.2,1,Data Science,0,Placed,1,0,0
+S17_77,2017,ME,7.8,77.2,80.7,2,Data Science,1,Placed,1,0,0
+S17_78,2017,ECE,7.38,86.3,88.3,1,Data Science,1,Unplaced,0,0,1
+S17_79,2017,ECE,8.34,75.3,67.4,1,Robotics,0,Unplaced,0,0,1
+S17_80,2017,ECE,7.51,70.2,89.2,0,Biotech Research,1,Placed,1,0,0
+S18_81,2018,BT,8.28,87.8,77.2,1,Data Science,1,Placed,1,0,0
+S18_82,2018,EE,7.16,79.8,72.2,1,Hardware & VLSI,0,Higher Studies,0,1,0
+S18_83,2018,EE,8.61,90.1,66.9,0,IoT,0,Higher Studies,0,1,0
+S18_84,2018,BT,7.72,88.1,81.7,0,Hardware & VLSI,0,Placed,1,0,0
+S18_85,2018,ECE,7.59,87.8,83.8,1,Data Science,0,Placed,1,0,0
+S18_86,2018,ECE,7.68,77.0,76.0,0,Web Development,1,Placed,1,0,0
+S18_87,2018,EE,6.23,93.3,73.6,2,Robotics,0,Unplaced,0,0,1
+S18_88,2018,COE,8.03,92.2,73.5,1,Robotics,0,Placed,1,0,0
+S18_89,2018,COE,8.33,76.4,72.7,0,Software Systems,0,Unplaced,0,0,1
+S18_90,2018,ECE,6.92,90.9,81.4,1,Hardware & VLSI,0,Placed,1,0,0
+S18_91,2018,ECE,7.05,91.0,98.1,1,Robotics,0,Placed,1,0,0
+S18_92,2018,ECE,7.04,100.0,95.6,1,Web Development,1,Placed,1,0,0
+S18_93,2018,ECE,7.91,79.6,91.3,3,Robotics,0,Placed,1,0,0
+S18_94,2018,ECE,7.6,77.8,83.9,1,Web Development,0,Placed,1,0,0
+S18_95,2018,ECE,8.82,73.9,74.7,1,Web Development,0,Placed,1,0,0
+S18_96,2018,EE,6.75,84.6,70.0,2,Hardware & VLSI,0,Placed,1,0,0
+S18_97,2018,BT,6.25,86.8,69.8,1,Web Development,0,Unplaced,0,0,1
+S18_98,2018,COE,8.9,83.3,72.2,2,Web Development,0,Placed,1,0,0
+S18_99,2018,EE,6.86,95.0,84.9,1,Web Development,1,Unplaced,0,0,1
+S18_100,2018,EE,6.54,83.6,72.2,0,Biotech Research,0,Unplaced,0,0,1
+S19_101,2019,EE,7.7,89.9,93.3,0,IoT,1,Placed,1,0,0
+S19_102,2019,BT,8.31,79.2,81.6,1,Software Systems,0,Placed,1,0,0
+S19_103,2019,BT,8.1,94.0,79.0,1,Hardware & VLSI,0,Placed,1,0,0
+S19_104,2019,ME,7.94,77.4,81.0,1,Software Systems,0,Higher Studies,0,1,0
+S19_105,2019,EE,7.64,79.3,95.8,1,Biotech Research,1,Placed,1,0,0
+S19_106,2019,ECE,7.46,76.2,78.0,1,Web Development,1,Placed,1,0,0
+S19_107,2019,COE,8.53,87.5,86.7,4,Robotics,0,Placed,1,0,0
+S19_108,2019,ECE,8.59,72.0,100.0,0,Web Development,0,Placed,1,0,0
+S19_109,2019,COE,7.34,74.3,85.3,0,IoT,0,Placed,1,0,0
+S19_110,2019,EE,8.13,70.8,84.0,0,Robotics,0,Placed,1,0,0
+S19_111,2019,EE,8.66,66.8,81.4,2,Robotics,0,Higher Studies,0,1,0
+S19_112,2019,ECE,8.61,84.0,79.8,0,Hardware & VLSI,0,Placed,1,0,0
+S19_113,2019,COE,7.09,93.3,98.4,3,Hardware & VLSI,0,Higher Studies,0,1,0
+S19_114,2019,COE,7.21,67.1,77.6,2,Robotics,0,Unplaced,0,0,1
+S19_115,2019,ECE,8.74,74.0,87.9,2,Web Development,0,Unplaced,0,0,1
+S19_116,2019,EE,7.33,83.3,83.9,1,Software Systems,0,Placed,1,0,0
+S19_117,2019,COE,7.94,77.0,76.0,4,Web Development,0,Higher Studies,0,1,0
+S19_118,2019,ECE,7.37,81.3,87.6,2,Biotech Research,2,Placed,1,0,0
+S19_119,2019,ECE,7.02,81.8,84.1,1,Data Science,0,Placed,1,0,0
+S19_120,2019,ME,7.34,82.4,75.0,1,Hardware & VLSI,2,Unplaced,0,0,1
+S20_121,2020,COE,7.11,90.4,85.5,0,Hardware & VLSI,1,Higher Studies,0,1,0
+S20_122,2020,EE,8.98,85.2,85.7,3,Software Systems,1,Higher Studies,0,1,0
+S20_123,2020,ECE,7.2,75.3,74.5,2,Software Systems,0,Placed,1,0,0
+S20_124,2020,EE,7.9,74.1,81.2,1,Software Systems,1,Placed,1,0,0
+S20_125,2020,ECE,7.42,84.2,84.9,0,Web Development,1,Placed,1,0,0
+S20_126,2020,EE,7.65,79.1,81.4,1,IoT,0,Placed,1,0,0
+S20_127,2020,COE,7.05,85.0,92.5,1,Hardware & VLSI,0,Unplaced,0,0,1
+S20_128,2020,ECE,7.45,72.2,78.6,2,Hardware & VLSI,0,Higher Studies,0,1,0
+S20_129,2020,BT,6.02,77.5,89.3,1,Web Development,1,Unplaced,0,0,1
+S20_130,2020,ECE,6.76,72.3,81.2,0,IoT,0,Placed,1,0,0
+S20_131,2020,COE,7.2,82.2,74.8,2,IoT,0,Placed,1,0,0
+S20_132,2020,ME,8.25,76.6,94.4,0,Data Science,0,Placed,1,0,0
+S20_133,2020,BT,6.34,97.7,95.7,2,IoT,0,Unplaced,0,0,1
+S20_134,2020,BT,7.19,84.1,83.8,1,Biotech Research,0,Higher Studies,0,1,0
+S20_135,2020,EE,8.45,76.7,88.2,0,IoT,1,Placed,1,0,0
+S20_136,2020,ME,7.57,89.4,84.4,0,Hardware & VLSI,0,Unplaced,0,0,1
+S20_137,2020,ECE,7.67,89.0,91.8,0,Robotics,2,Higher Studies,0,1,0
+S20_138,2020,ECE,8.72,92.5,81.6,1,Core Engineering,0,Placed,1,0,0
+S20_139,2020,COE,6.67,77.8,84.9,1,Hardware & VLSI,0,Placed,1,0,0
+S20_140,2020,BT,8.4,73.0,84.5,1,Software Systems,0,Placed,1,0,0
+S21_141,2021,EE,7.82,87.2,76.1,0,Software Systems,0,Unplaced,0,0,1
+S21_142,2021,EE,8.76,100.0,83.3,0,Biotech Research,0,Placed,1,0,0
+S21_143,2021,COE,6.19,77.4,86.4,0,Hardware & VLSI,0,Unplaced,0,0,1
+S21_144,2021,ME,7.64,78.2,91.1,2,Software Systems,0,Placed,1,0,0
+S21_145,2021,ECE,7.93,79.0,86.2,0,Software Systems,0,Placed,1,0,0
+S21_146,2021,ECE,5.22,71.6,89.3,1,IoT,1,Placed,1,0,0
+S21_147,2021,BT,7.56,71.7,88.0,1,Biotech Research,0,Higher Studies,0,1,0
+S21_148,2021,EE,7.1,79.4,96.6,3,IoT,0,Placed,1,0,0
+S21_149,2021,EE,7.54,76.5,79.0,1,Biotech Research,0,Placed,1,0,0
+S21_150,2021,BT,6.67,89.3,82.8,1,Robotics,0,Unplaced,0,0,1
+S21_151,2021,EE,6.75,87.2,82.2,2,Hardware & VLSI,0,Unplaced,0,0,1
+S21_152,2021,BT,6.98,81.8,96.0,2,Software Systems,0,Unplaced,0,0,1
+S21_153,2021,COE,7.99,83.1,84.0,1,Software Systems,0,Placed,1,0,0
+S21_154,2021,ECE,8.29,90.0,78.0,2,IoT,1,Placed,1,0,0
+S21_155,2021,ME,8.13,78.9,68.2,1,Hardware & VLSI,0,Placed,1,0,0
+S21_156,2021,EE,6.78,74.1,62.8,0,Hardware & VLSI,0,Placed,1,0,0
+S21_157,2021,ME,8.81,90.1,74.5,1,Data Science,0,Placed,1,0,0
+S21_158,2021,EE,9.3,72.7,67.7,1,Biotech Research,0,Placed,1,0,0
+S21_159,2021,ME,8.11,84.2,80.8,0,Biotech Research,1,Placed,1,0,0
+S21_160,2021,BT,7.45,75.0,72.1,0,IoT,1,Placed,1,0,0
+S22_161,2022,ME,6.71,89.5,72.1,0,Robotics,0,Placed,1,0,0
+S22_162,2022,COE,7.32,77.2,82.6,1,Biotech Research,1,Unplaced,0,0,1
+S22_163,2022,EE,7.6,78.6,81.0,2,Software Systems,0,Placed,1,0,0
+S22_164,2022,EE,7.93,72.0,74.5,1,Hardware & VLSI,1,Placed,1,0,0
+S22_165,2022,ECE,6.83,99.2,70.5,2,Biotech Research,0,Placed,1,0,0
+S22_166,2022,COE,7.75,86.5,70.5,0,Core Engineering,0,Placed,1,0,0
+S22_167,2022,ECE,8.03,69.6,75.1,1,Biotech Research,0,Placed,1,0,0
+S22_168,2022,COE,9.02,86.6,93.0,0,Biotech Research,0,Placed,1,0,0
+S22_169,2022,ME,7.03,73.9,74.8,0,Biotech Research,0,Placed,1,0,0
+S22_170,2022,EE,6.52,83.9,67.6,2,Robotics,0,Placed,1,0,0
+S22_171,2022,ME,6.3,71.4,79.9,0,Data Science,0,Placed,1,0,0
+S22_172,2022,BT,7.59,92.5,85.6,0,Software Systems,0,Placed,1,0,0
+S22_173,2022,COE,5.63,78.0,74.0,1,Data Science,0,Unplaced,0,0,1
+S22_174,2022,EE,8.13,86.0,84.7,1,Software Systems,0,Placed,1,0,0
+S22_175,2022,ME,6.03,86.1,71.2,1,Biotech Research,1,Unplaced,0,0,1
+S22_176,2022,BT,5.78,82.7,79.2,1,IoT,1,Unplaced,0,0,1
+S22_177,2022,COE,7.36,76.0,84.3,0,Data Science,1,Unplaced,0,0,1
+S22_178,2022,COE,6.78,100.0,77.6,1,Data Science,0,Higher Studies,0,1,0
+S22_179,2022,BT,7.01,80.5,80.5,2,Robotics,0,Placed,1,0,0
+S22_180,2022,EE,7.92,72.3,84.8,2,Software Systems,0,Higher Studies,0,1,0
+S23_181,2023,COE,7.62,79.3,75.1,1,Data Science,0,Unplaced,0,0,1
+S23_182,2023,BT,7.26,69.7,87.3,1,Robotics,0,Placed,1,0,0
+S23_183,2023,ME,6.41,80.2,70.6,3,Core Engineering,0,Higher Studies,0,1,0
+S23_184,2023,ME,6.06,74.1,84.6,1,Data Science,1,Placed,1,0,0
+S23_185,2023,EE,7.4,78.5,86.5,1,Biotech Research,0,Placed,1,0,0
+S23_186,2023,COE,6.45,87.9,70.1,3,Software Systems,1,Placed,1,0,0
+S23_187,2023,EE,7.02,96.6,85.4,0,Web Development,1,Higher Studies,0,1,0
+S23_188,2023,BT,7.11,84.2,86.4,1,Software Systems,0,Placed,1,0,0
+S23_189,2023,EE,7.02,81.4,88.7,0,Robotics,0,Placed,1,0,0
+S23_190,2023,EE,7.96,74.2,69.4,2,IoT,0,Placed,1,0,0
+S23_191,2023,BT,7.52,75.2,81.4,0,IoT,1,Placed,1,0,0
+S23_192,2023,EE,7.7,80.3,79.1,3,IoT,0,Placed,1,0,0
+S23_193,2023,EE,8.17,81.8,98.9,0,Robotics,0,Placed,1,0,0
+S23_194,2023,BT,7.84,80.1,73.8,1,Data Science,0,Placed,1,0,0
+S23_195,2023,ME,7.46,98.3,70.3,1,IoT,0,Higher Studies,0,1,0
+S23_196,2023,BT,8.41,85.9,85.9,2,Data Science,0,Unplaced,0,0,1
+S23_197,2023,ME,7.07,84.5,75.2,2,Data Science,0,Placed,1,0,0
+S23_198,2023,BT,7.72,87.3,91.5,0,Robotics,0,Placed,1,0,0
+S23_199,2023,EE,7.36,90.1,81.6,3,Hardware & VLSI,0,Unplaced,0,0,1
+S23_200,2023,BT,6.54,90.8,73.1,2,IoT,0,Unplaced,0,0,1
