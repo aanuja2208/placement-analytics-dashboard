@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Sorted - Interactive Prototype</title>
+    <!-- Tailwind CSS for sleek interface -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .glass {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-blue {
+            box-shadow: 0 0 20px rgba(0, 186, 242, 0.15);
+        }
+        /* Scrollbar hides */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+
+    <div class="w-full max-w-6xl flex flex-col lg:flex-row gap-8 items-stretch justify-center">
+
+        <!-- Mobile Viewport Frame (Simulated iPhone) -->
+        <div class="relative w-full max-w-[400px] h-[820px] rounded-[50px] border-[10px] border-gray-800 bg-[#0d1220] shadow-2xl flex flex-col overflow-hidden mx-auto glow-blue">
+            
+            <!-- Speaker & Camera Notch -->
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-7 bg-gray-800 rounded-b-2xl z-50 flex items-center justify-center">
+                <div class="w-12 h-1 bg-gray-900 rounded-full mr-2"></div>
+                <div class="w-2.5 h-2.5 bg-gray-900 rounded-full"></div>
+            </div>
+
+            <!-- Top App Bar -->
+            <div class="pt-10 px-6 pb-4 flex justify-between items-center border-b border-gray-800 bg-[#0d1220]/90 sticky top-0 z-40">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-[#00baf2] flex items-center justify-center font-bold text-white text-sm shadow-md">P</div>
+                    <div>
+                        <h2 class="text-sm font-extrabold tracking-tight">Paytm <span class="text-[#00baf2]">Sorted</span></h2>
+                        <p class="text-[10px] text-gray-400" id="current-user-handle">@karan.sorted</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="flex flex-col items-end">
+                        <span class="text-[10px] text-gray-500 uppercase tracking-widest">Split Score</span>
+                        <span class="text-xs font-bold text-green-400" id="split-score-display">98 / 100</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Scrollable Screen Content -->
+            <div class="flex-1 overflow-y-auto px-5 py-4 space-y-5 pb-20">
+                
+                <!-- Balance & Quick Status -->
+                <div class="glass p-4 rounded-3xl flex justify-between items-center">
+                    <div>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-wider">Primary Account</p>
+                        <h3 class="text-lg font-bold text-white">₹14,250.00</h3>
+                    </div>
+                    <span class="text-[10px] px-2.5 py-1 rounded-full bg-green-500/10 text-green-400 font-semibold border border-green-500/20">Active</span>
+                </div>
+
+                <!-- Paytm Core Ad & Sourcing Blocks (Crucial Revenue Channels) -->
+                <div class="space-y-2">
+                    <div class="text-[9px] text-gray-500 uppercase tracking-widest font-semibold px-1">Special Offers & Credit</div>
+                    
+                    <!-- Targeted GenZ Banner Ad -->
+                    <div class="bg-gradient-to-r from-purple-900/60 to-indigo-900/60 p-3.5 rounded-2xl border border-purple-500/20 relative overflow-hidden group">
+                        <div class="absolute right-0 bottom-0 opacity-10 font-bold text-6xl">AD</div>
+                        <span class="text-[8px] bg-purple-500 text-white font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">Partner Deal</span>
+                        <h4 class="text-xs font-bold text-white mt-1">Sunburn Arena Concert tickets - 15% OFF</h4>
+                        <p class="text-[9px] text-purple-200">Pay using Paytm UPI to get instant cashback.</p>
+                    </div>
+
+                    <!-- Targeted Credit Product (Paytm Postpaid/Short-term credit for college) -->
+                    <div class="bg-gradient-to-r from-blue-950/60 to-cyan-950/60 p-3.5 rounded-2xl border border-blue-500/20 flex justify-between items-center">
+                        <div>
+                            <span class="text-[8px] bg-blue-500 text-white font-bold px-1.5 py-0.5 rounded uppercase tracking-wider font-semibold">Paytm Postpaid</span>
+                            <h4 class="text-xs font-bold text-white mt-1">Need a pocket money advance?</h4>
+                            <p class="text-[9px] text-blue-200">Instant credit line up to ₹5,000 at 0% fee.</p>
+                        </div>
+                        <button class="bg-[#00baf2] hover:bg-sky-400 text-white text-[10px] font-bold px-3 py-1.5 rounded-xl shadow-md transition">Apply</button>
+                    </div>
+                </div>
+
+                <!-- Custom Handle Creator Widget -->
+                <div class="glass p-4 rounded-3xl space-y-3">
+                    <h4 class="text-xs font-bold text-white flex items-center justify-between">
+                        <span>🛡️ Edit UPI Handle</span>
+                        <span class="text-[9px] text-gray-400 font-normal">Prevents mobile leaks</span>
+                    </h4>
+                    <div class="flex gap-2">
+                        <div class="relative flex-1">
+                            <input type="text" id="handle-input" class="w-full bg-[#161d30] border border-gray-700 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#00baf2]" placeholder="username">
+                            <span class="absolute right-3 top-2.5 text-xs text-gray-400">.sorted</span>
+                        </div>
+                        <button onclick="saveHandle()" class="bg-[#00baf2] hover:bg-sky-400 text-white text-xs font-bold px-4 py-2 rounded-xl transition">Save</button>
+                    </div>
+                </div>
+
+                <!-- Bill Splitting Tool -->
+                <div class="glass p-5 rounded-3xl space-y-4">
+                    <h3 class="text-sm font-bold text-white">⚡ Quick Split</h3>
+                    
+                    <div class="space-y-2">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-wider">Group Name</label>
+                        <input type="text" id="group-name" class="w-full bg-[#161d30] border border-gray-700 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#00baf2]" value="Lonavala Trip 2026">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-wider">Total Bill Amount (INR)</label>
+                        <input type="number" id="bill-amount" class="w-full bg-[#161d30] border border-gray-700 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-[#00baf2]" placeholder="e.g. 1200" value="1200">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] text-gray-400 uppercase tracking-wider">Split Type</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="setSplitType('EQUAL')" id="btn-split-equal" class="py-1.5 rounded-lg text-[10px] font-bold bg-[#00baf2] text-white transition">Equal</button>
+                            <button onclick="setSplitType('MANUAL')" id="btn-split-manual" class="py-1.5 rounded-lg text-[10px] font-bold bg-[#161d30] text-gray-400 border border-gray-700 transition">Manual</button>
+                            <button onclick="setSplitType('ITEMIZED')" id="btn-split-itemized" class="py-1.5 rounded-lg text-[10px] font-bold bg-[#161d30] text-gray-400 border border-gray-700 transition">Itemized</button>
+                        </div>
+                    </div>
+
+                    <!-- Split Input Area (Dynamic) -->
+                    <div id="split-inputs" class="space-y-3 pt-2">
+                        <!-- Dynamic inputs populated via JS -->
+                    </div>
+
+                    <button onclick="processSplit()" class="w-full bg-[#00baf2] hover:bg-sky-400 text-white text-xs font-bold py-3 rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+                        <span>Send UPI Request Pay</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Group Balance Status (Live tracking) -->
+                <div class="glass p-5 rounded-3xl space-y-3">
+                    <h3 class="text-sm font-bold text-white flex justify-between items-center">
+                        <span>📊 Active Balances</span>
+                        <span class="text-[10px] font-normal text-gray-400">NPCI Request Pay Updates</span>
+                    </h3>
+                    <div id="active-balances-list" class="space-y-2 max-h-[180px] overflow-y-auto pr-1">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Navigation Bar -->
+            <div class="absolute bottom-0 w-full bg-[#0d1220]/95 border-t border-gray-800 py-3 px-6 flex justify-around items-center z-40">
+                <button class="flex flex-col items-center gap-1 text-gray-500">
+                    <span class="text-lg">📱</span>
+                    <span class="text-[8px] font-bold tracking-wider">Pay</span>
+                </button>
+                <button class="flex flex-col items-center gap-1 text-[#00baf2]">
+                    <span class="text-lg">✨</span>
+                    <span class="text-[8px] font-bold tracking-wider">Sorted</span>
+                </button>
+                <button class="flex flex-col items-center gap-1 text-gray-500">
+                    <span class="text-lg">📂</span>
+                    <span class="text-[8px] font-bold tracking-wider">History</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Technical Dashboard & Realtime Schema Viewer -->
+        <div class="flex-1 flex flex-col gap-6">
+
+            <!-- Explanation / PM View -->
+            <div class="glass p-6 rounded-[30px] space-y-4">
+                <h2 class="text-xl font-extrabold text-white flex items-center gap-2">
+                    <span class="text-2xl">✨</span>
+                    <span>Paytm Sorted - Technical Architecture & UX Dashboard</span>
+                </h2>
+                
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    This interactive prototype demonstrates the front-end capabilities of <strong>Paytm Sorted</strong>. It is built to resolve the social splitting friction for the 15-25 age bracket without sacrificing Paytm's critical home screen advertising and loan cross-selling modules.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="p-3.5 bg-gray-900/60 rounded-2xl border border-gray-800">
+                        <strong class="text-[#00baf2] block mb-1">Split Score (Reputation Meter)</strong>
+                        Tracks a user's average settlement time in minutes. Slow repayment rates degrade the score dynamically. This uses peer pressure to force repayments without manual payment chasing.
+                    </div>
+                    <div class="p-3.5 bg-gray-900/60 rounded-2xl border border-gray-800">
+                        <strong class="text-[#00baf2] block mb-1">NPCI UPI Request Pay API</strong>
+                        Rather than standard messages, the system triggers official UPI Collect requests using the API structure. Settlement callback automatically settles the database.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Inspector (Updated in real-time as users interact with split tool) -->
+            <div class="glass p-6 rounded-[30px] flex-1 flex flex-col space-y-4">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-[#00baf2] flex items-center justify-between">
+                    <span>💾 Live SQL Database Inspector (PostgreSQL)</span>
+                    <span class="text-[10px] text-green-400 font-normal flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-green-400 animate-ping"></span> Live updates active
+                    </span>
+                </h3>
+
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 text-[10px]">
+                    <!-- Users table viewer -->
+                    <div class="bg-gray-900/80 p-3 rounded-2xl border border-gray-800 flex flex-col h-[200px]">
+                        <h4 class="text-gray-400 font-bold mb-1.5 uppercase">Table: users</h4>
+                        <div class="overflow-auto flex-1 font-mono text-[9px]" id="db-table-users"></div>
+                    </div>
+                    <!-- Transactions table viewer -->
+                    <div class="bg-gray-900/80 p-3 rounded-2xl border border-gray-800 flex flex-col h-[200px]">
+                        <h4 class="text-gray-400 font-bold mb-1.5 uppercase">Table: transactions</h4>
+                        <div class="overflow-auto flex-1 font-mono text-[9px]" id="db-table-transactions"></div>
+                    </div>
+                    <!-- Splits table viewer -->
+                    <div class="bg-gray-900/80 p-3 rounded-2xl border border-gray-800 flex flex-col h-[200px] md:col-span-2">
+                        <h4 class="text-gray-400 font-bold mb-1.5 uppercase">Table: splits</h4>
+                        <div class="overflow-auto flex-1 font-mono text-[9px]" id="db-table-splits"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Prototype State Engine Script -->
+    <script>
+        // In-memory Database mock
+        let database = {
+            users: [
+                { user_id: "USR001", handle: "@karan.sorted", phone: "+91 98765 43210", split_score: 98, avg_time: 120 },
+                { user_id: "USR002", handle: "@rahul.sorted", phone: "+91 99988 77766", split_score: 94, avg_time: 1800 },
+                { user_id: "USR003", handle: "@sneha.sorted", phone: "+91 95555 44433", split_score: 82, avg_time: 21600 },
+                { user_id: "USR004", handle: "@amit.sorted", phone: "+91 92222 11100", split_score: 55, avg_time: 86400 }
+            ],
+            groups: [
+                { group_id: "GRP001", group_name: "Lonavala Trip 2026" }
+            ],
+            group_members: [
+                { group_id: "GRP001", user_id: "USR001" },
+                { group_id: "GRP001", user_id: "USR002" },
+                { group_id: "GRP001", user_id: "USR003" },
+                { group_id: "GRP001", user_id: "USR004" }
+            ],
+            transactions: [],
+            splits: []
+        };
+
+        let currentSplitType = 'EQUAL';
+
+        function updateDatabaseView() {
+            // Render Users
+            let usersHtml = `<table class="w-full text-left">
+                <thead><tr class="text-gray-500 border-b border-gray-800"><th class="pb-1">handle</th><th class="pb-1 text-center">split_score</th><th class="pb-1 text-right">avg_time</th></tr></thead>
+                <tbody>`;
+            database.users.forEach(u => {
+                usersHtml += `<tr class="border-b border-gray-800/40"><td class="py-1 text-white">${u.handle}</td><td class="py-1 text-center text-green-400 font-semibold">${u.split_score}</td><td class="py-1 text-right text-gray-400">${(u.avg_time/60).toFixed(0)}m</td></tr>`;
+            });
+            usersHtml += `</tbody></table>`;
+            document.getElementById('db-table-users').innerHTML = usersHtml;
+
+            // Render Transactions
+            let txnsHtml = `<table class="w-full text-left">
+                <thead><tr class="text-gray-500 border-b border-gray-800"><th class="pb-1">txn_id</th><th class="pb-1">payer</th><th class="pb-1 text-right">amount</th></tr></thead>
+                <tbody>`;
+            if(database.transactions.length === 0) {
+                txnsHtml += `<tr><td colspan="3" class="py-3 text-center text-gray-600">No transactions recorded yet</td></tr>`;
+            } else {
+                database.transactions.forEach(t => {
+                    let payer = database.users.find(u => u.user_id === t.payer_id)?.handle || t.payer_id;
+                    txnsHtml += `<tr class="border-b border-gray-800/40"><td class="py-1 text-blue-400">${t.txn_id}</td><td class="py-1">${payer}</td><td class="py-1 text-right text-white font-semibold">₹${t.total_amount}</td></tr>`;
+                });
+            }
+            txnsHtml += `</tbody></table>`;
+            document.getElementById('db-table-transactions').innerHTML = txnsHtml;
+
+            // Render Splits
+            let splitsHtml = `<table class="w-full text-left">
+                <thead><tr class="text-gray-500 border-b border-gray-800"><th class="pb-1">split_id</th><th class="pb-1">debtor</th><th class="pb-1 text-right">amount</th><th class="pb-1 text-center">status</th></tr></thead>
+                <tbody>`;
+            if(database.splits.length === 0) {
+                splitsHtml += `<tr><td colspan="4" class="py-3 text-center text-gray-600">No split records yet</td></tr>`;
+            } else {
+                database.splits.forEach(s => {
+                    let debtor = database.users.find(u => u.user_id === s.debtor_id)?.handle || s.debtor_id;
+                    let statusColor = s.status === 'PAID' ? 'text-green-400' : 'text-yellow-500';
+                    splitsHtml += `<tr class="border-b border-gray-800/40">
+                        <td class="py-1 text-[#00baf2]">${s.split_id}</td>
+                        <td class="py-1">${debtor}</td>
+                        <td class="py-1 text-right text-white">₹${parseFloat(s.split_amount).toFixed(2)}</td>
+                        <td class="py-1 text-center font-bold ${statusColor}">${s.status}</td>
+                    </tr>`;
+                });
+            }
+            splitsHtml += `</tbody></table>`;
+            document.getElementById('db-table-splits').innerHTML = splitsHtml;
+
+            // Render Active Balances inside the mobile frame
+            renderMobileBalances();
+        }
+
+        function renderMobileBalances() {
+            let container = document.getElementById('active-balances-list');
+            if (database.splits.length === 0) {
+                container.innerHTML = `<p class="text-xs text-gray-500 text-center py-4">No active balances. Create a split request above.</p>`;
+                return;
+            }
+
+            let html = "";
+            database.splits.forEach(s => {
+                let debtor = database.users.find(u => u.user_id === s.debtor_id);
+                let scoreColor = debtor.split_score >= 90 ? 'text-green-400' : (debtor.split_score >= 70 ? 'text-yellow-400' : 'text-red-400');
+                
+                html += `<div class="flex justify-between items-center p-2.5 bg-[#161d30] rounded-2xl border border-gray-800/60">
+                    <div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-xs font-bold text-white">${debtor.handle}</span>
+                            <span class="text-[8px] px-1 bg-gray-800 rounded font-semibold ${scoreColor}">Score: ${debtor.split_score}</span>
+                        </div>
+                        <p class="text-[9px] text-gray-400">Split ID: ${s.split_id}</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs font-bold text-white">₹${parseFloat(s.split_amount).toFixed(2)}</span>
+                        ${s.status === 'PENDING' ? 
+                            `<button onclick="simulateCallback('${s.split_id}')" class="bg-green-500 hover:bg-green-400 text-white font-bold text-[8px] px-2 py-1 rounded transition">Pay</button>` : 
+                            `<span class="text-green-400 text-[9px] font-bold flex items-center gap-0.5">✓ Settled</span>`
+                        }
+                    </div>
+                </div>`;
+            });
+            container.innerHTML = html;
+        }
+
+        function saveHandle() {
+            let input = document.getElementById('handle-input').value.trim();
+            if(!input) return;
+            
+            let handle = `@${input}.sorted`;
+            database.users[0].handle = handle;
+            document.getElementById('current-user-handle').innerText = handle;
+            updateDatabaseView();
+        }
+
+        function setSplitType(type) {
+            currentSplitType = type;
+            let btns = ['btn-split-equal', 'btn-split-manual', 'btn-split-itemized'];
+            btns.forEach(b => {
+                let btn = document.getElementById(b);
+                btn.className = "py-1.5 rounded-lg text-[10px] font-bold bg-[#161d30] text-gray-400 border border-gray-700 transition";
+            });
+
+            let activeBtn = document.getElementById(`btn-split-${type.toLowerCase()}`);
+            activeBtn.className = "py-1.5 rounded-lg text-[10px] font-bold bg-[#00baf2] text-white transition";
+
+            renderSplitInputs();
+        }
+
+        function renderSplitInputs() {
+            let container = document.getElementById('split-inputs');
+            let billAmount = parseFloat(document.getElementById('bill-amount').value) || 0;
+            
+            if (currentSplitType === 'EQUAL') {
+                container.innerHTML = `<div class="p-3 bg-[#161d30] rounded-2xl border border-gray-800 text-center">
+                    <p class="text-xs text-gray-400">Total bill will be split equally among all 4 group members.</p>
+                    <p class="text-sm font-bold text-[#00baf2] mt-1">₹${(billAmount / 4).toFixed(2)} each</p>
+                </div>`;
+            } else if (currentSplitType === 'MANUAL') {
+                container.innerHTML = `<div class="space-y-2">
+                    <div class="flex justify-between items-center text-[10px] text-gray-400 px-1">
+                        <span>Member</span>
+                        <span>Amount (INR)</span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@karan.sorted (You)</span>
+                        <input type="number" id="manual-val-1" class="w-20 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="${(billAmount/4).toFixed(0)}">
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@rahul.sorted</span>
+                        <input type="number" id="manual-val-2" class="w-20 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="${(billAmount/4).toFixed(0)}">
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@sneha.sorted</span>
+                        <input type="number" id="manual-val-3" class="w-20 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="${(billAmount/4).toFixed(0)}">
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@amit.sorted</span>
+                        <input type="number" id="manual-val-4" class="w-20 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="${(billAmount/4).toFixed(0)}">
+                    </div>
+                </div>`;
+            } else if (currentSplitType === 'ITEMIZED') {
+                container.innerHTML = `<div class="space-y-2">
+                    <div class="flex justify-between items-center text-[10px] text-gray-400 px-1">
+                        <span>Item details</span>
+                        <span>Share %</span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@karan.sorted (You)</span>
+                        <input type="number" id="item-val-1" class="w-16 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="25">
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@rahul.sorted</span>
+                        <input type="number" id="item-val-2" class="w-16 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="25">
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@sneha.sorted</span>
+                        <input type="number" id="item-val-3" class="w-16 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="30">
+                    </div>
+                    <div class="flex items-center justify-between text-xs p-1">
+                        <span class="text-gray-300">@amit.sorted</span>
+                        <input type="number" id="item-val-4" class="w-16 bg-[#161d30] border border-gray-700 rounded-lg px-2 py-1 text-right text-xs" value="20">
+                    </div>
+                </div>`;
+            }
+        }
+
+        function processSplit() {
+            let billAmount = parseFloat(document.getElementById('bill-amount').value) || 0;
+            if(billAmount <= 0) return;
+
+            let groupName = document.getElementById('group-name').value;
+            let txnId = "TXN" + Math.floor(1000 + Math.random() * 9000);
+            
+            // Insert transaction
+            let transaction = {
+                txn_id: txnId,
+                group_id: "GRP001",
+                payer_id: "USR001",
+                total_amount: billAmount,
+                description: groupName
+            };
+            database.transactions.push(transaction);
+
+            // Calculate shares
+            let shares = [];
+            if (currentSplitType === 'EQUAL') {
+                let shareVal = billAmount / 4;
+                database.users.forEach((u, i) => {
+                    if (u.user_id !== "USR001") {
+                        shares.push({ debtor_id: u.user_id, amount: shareVal });
+                    }
+                });
+            } else if (currentSplitType === 'MANUAL') {
+                for (let i = 2; i <= 4; i++) {
+                    let shareVal = parseFloat(document.getElementById(`manual-val-${i}`).value) || 0;
+                    shares.push({ debtor_id: `USR00${i}`, amount: shareVal });
+                }
+            } else if (currentSplitType === 'ITEMIZED') {
+                for (let i = 2; i <= 4; i++) {
+                    let pct = parseFloat(document.getElementById(`item-val-${i}`).value) || 0;
+                    let shareVal = billAmount * (pct / 100);
+                    shares.push({ debtor_id: `USR00${i}`, amount: shareVal });
+                }
+            }
+
+            // Insert splits
+            shares.forEach((s, index) => {
+                let splitId = "SPL" + Math.floor(10000 + Math.random() * 90000);
+                database.splits.push({
+                    split_id: splitId,
+                    txn_id: txnId,
+                    debtor_id: s.debtor_id,
+                    split_amount: s.amount,
+                    status: 'PENDING'
+                });
+            });
+
+            updateDatabaseView();
+        }
+
+        function simulateCallback(splitId) {
+            let split = database.splits.find(s => s.split_id === splitId);
+            if (split) {
+                split.status = 'PAID';
+                
+                // Adjust score based on time
+                let debtor = database.users.find(u => u.user_id === split.debtor_id);
+                if (debtor) {
+                    // Simulated faster settlement increases score
+                    debtor.split_score = Math.min(100, debtor.split_score + 2);
+                }
+                
+                updateDatabaseView();
+            }
+        }
+
+        // Initialize view
+        document.getElementById('handle-input').addEventListener('input', function() {
+            // Keep value lowercase & replace spaces/special chars
+            this.value = this.value.toLowerCase().replace(/[^a-z0-9]/g, '');
+        });
+
+        document.getElementById('bill-amount').addEventListener('input', renderSplitInputs);
+
+        renderSplitInputs();
+        updateDatabaseView();
+    </script>
+</body>
+</html>
